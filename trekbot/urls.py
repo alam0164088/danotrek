@@ -21,7 +21,6 @@ router.register(r'auth', AuthViewSet, basename='auth')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
 
@@ -31,4 +30,5 @@ urlpatterns = [
 urlpatterns += [
     path('api/auth/register/', AuthViewSet.as_view({'post': 'register'})),
     path('api/auth/login/', AuthViewSet.as_view({'post': 'login'})),
+    path('api/auth/verify-otp/', AuthViewSet.as_view({'post': 'verify_otp'})),
 ]
