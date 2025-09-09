@@ -1,0 +1,19 @@
+trekbot/
+├── trekbot/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+│   └── asgi.py
+├── accounts/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   ├── tests.py
+│   └── migrations/
+│       └── __init__.py
+├── manage.py
+├── requirements.txt
